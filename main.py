@@ -1,25 +1,19 @@
 def main():
     book_path = "books/frankenstein.txt"
     text = get_book_path(book_path)
-    
-    #print(sort_char(char_count(text)))
     print(print_report(book_path, number_of_words(text), sort_char(char_count(text))))
-
 
 def get_book_path(path):
     with open(path) as f:
         return f.read()
     
-    
 def number_of_words(text):
     words = text.split()
     return len(words)
 
-
 def char_count(text):
     words = text.lower().split()
     letter_count = {}
-
     for word in words:
         for letter in word:
             letter_count[letter] = letter_count.get(letter, 0) + 1
@@ -52,8 +46,6 @@ def print_report(path, number_of_words, ordered_list):
     
     return f"Print report for {path} Completed"
     
-    
-
 main()
 
 
