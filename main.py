@@ -44,8 +44,12 @@ def print_report(path, number_of_words, ordered_list):
     for item in ordered_list:
         print(f"The {item['char']} character was found {item['num']} times\n")
     
-    return f"Print report for {path} Completed"
+
     
+    return f"Print report for {path} Completed"
+
+
+
 main()
 
 
